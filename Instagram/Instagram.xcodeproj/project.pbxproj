@@ -13,6 +13,7 @@
 		EC7B7DCE1E77283400FE3EC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC7B7DCC1E77283400FE3EC7 /* Main.storyboard */; };
 		EC7B7DD01E77283400FE3EC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC7B7DCF1E77283400FE3EC7 /* Assets.xcassets */; };
 		EC7B7DD31E77283400FE3EC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC7B7DD11E77283400FE3EC7 /* LaunchScreen.storyboard */; };
+		EC7B7DDD1E77382A00FE3EC7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7B7DDC1E77382A00FE3EC7 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		EC7B7DCF1E77283400FE3EC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC7B7DD21E77283400FE3EC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC7B7DD41E77283400FE3EC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC7B7DDC1E77382A00FE3EC7 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				EC7B7DCF1E77283400FE3EC7 /* Assets.xcassets */,
 				EC7B7DD11E77283400FE3EC7 /* LaunchScreen.storyboard */,
 				EC7B7DD41E77283400FE3EC7 /* Info.plist */,
+				EC7B7DDC1E77382A00FE3EC7 /* MainViewController.swift */,
 			);
 			path = Instagram;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC7B7DDD1E77382A00FE3EC7 /* MainViewController.swift in Sources */,
 				EC7B7DCB1E77283400FE3EC7 /* ViewController.swift in Sources */,
 				EC7B7DC91E77283400FE3EC7 /* AppDelegate.swift in Sources */,
 			);
@@ -376,6 +380,7 @@
 				EC7B7DD91E77283400FE3EC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

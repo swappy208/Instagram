@@ -24,6 +24,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 configuration.server = "http://pacific-scrubland-28869.herokuapp.com/parse"
             })
         )
+        if PFUser.current() != nil{
+            print("There is a current user")
+            let storyBoard = UIStoryboard(name : "Main", bundle: nil)
+            let viewController = storyBoard.instantiateViewController(withIdentifier: "MainViewController")
+            window?.rootViewController = viewController //root view controller
+            
+        }
         return true
     }
 

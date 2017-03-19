@@ -73,17 +73,17 @@
                     <connections>
                         <outlet property="passwordField" destination="tMy-bU-A1D" id="CaU-ms-ObA"/>
                         <outlet property="usernameField" destination="Wwl-9t-w4l" id="Cg3-zi-kfB"/>
-                        <segue destination="vA7-I7-LMo" kind="presentation" identifier="loginSegue" id="9AC-AQ-4F2"/>
+                        <segue destination="YdN-Ox-VWU" kind="modal" identifier="loginSegue" id="6hs-CI-loQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
+            <point key="canvasLocation" x="642" y="644"/>
         </scene>
-        <!--View Controller-->
+        <!--Home-->
         <scene sceneID="PNH-hN-6Z5">
             <objects>
-                <viewController id="vA7-I7-LMo" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainViewController" id="vA7-I7-LMo" customClass="MainViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Xct-wG-qiD"/>
                         <viewControllerLayoutGuide type="bottom" id="Ar4-5Y-qnk"/>
@@ -93,10 +93,75 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="home" id="o06-eP-oOq"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="chV-95-bwT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="814" y="123"/>
+            <point key="canvasLocation" x="2640.8000000000002" y="-44.527736131934034"/>
+        </scene>
+        <!--Photo-->
+        <scene sceneID="EwS-HU-WEQ">
+            <objects>
+                <viewController id="xwx-xi-A2V" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zkl-d4-4SC"/>
+                        <viewControllerLayoutGuide type="bottom" id="XnC-PT-3qp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8hl-r6-86z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Photo" image="camera" id="rQs-6e-e4v"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g3e-E8-DLI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2640.8000000000002" y="635.53223388305855"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="p2i-xs-1nQ">
+            <objects>
+                <viewController id="K78-Wh-TEm" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iCr-XJ-hxh"/>
+                        <viewControllerLayoutGuide type="bottom" id="4hV-Nn-gfo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jTZ-nj-2lu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" image="profile" id="3yd-hH-VsE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NUe-9c-ZBw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2655.1999999999998" y="1331.784107946027"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="cZm-en-SOd">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="YdN-Ox-VWU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="Czh-xU-aXi"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="wgc-Yu-tk4">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="vA7-I7-LMo" kind="relationship" relationship="viewControllers" id="cVw-yP-Zxa"/>
+                        <segue destination="xwx-xi-A2V" kind="relationship" relationship="viewControllers" id="CAe-YJ-iwK"/>
+                        <segue destination="K78-Wh-TEm" kind="relationship" relationship="viewControllers" id="PPY-g3-AVM"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lpd-dj-vZx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1701.5999999999999" y="643.62818590704649"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="camera" width="25" height="25"/>
+        <image name="home" width="25" height="25"/>
+        <image name="profile" width="25" height="25"/>
+    </resources>
+    <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
