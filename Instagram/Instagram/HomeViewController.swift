@@ -71,6 +71,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         let post = posts[indexPath.row]
         let caption = post["caption"] as? String
         let photoPFFile = post["media"] as? PFFile
+        let created = post["creationTime"] as? Date
         print("PhotoPFFFile is : ", photoPFFile)
         print("Check")
         cell.workingImageView.file = photoPFFile
